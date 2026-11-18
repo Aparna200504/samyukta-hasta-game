@@ -1,0 +1,30 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# JavaScript dependencies and build output
+node_modules/
+.next/
+npm-debug.log*
+
+# Local datasets, trained models, generated reports, and crops
+data/
+outputs/
+*.pt
+*.pth
+*.task
+
+# Large/private media
+reference/*.mp4
+
+# OS/editor files
+.DS_Store
+Thumbs.db
