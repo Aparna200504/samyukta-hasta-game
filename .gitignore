@@ -1,30 +1,63 @@
-# Python environments and caches
-.venv/
-venv/
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+.venv/
+venv/
+venv*/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 *.egg-info/
 
-# Local secrets and environment overrides
+data/
+hand_landmarker.task
+
+
+# Virtual environment and Python tooling
 .env
 .env.*
+*.env
 !.env.example
+!.env.*.example
 
-# JavaScript dependencies and build output
+# Node.js
 node_modules/
 .next/
+out/
+dist/
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Local datasets, trained models, generated reports, and crops
-data/
+# Generated model and evaluation files
 outputs/
+students/
 *.pt
 *.pth
-*.task
+*.onnx
 
-# Large/private media
-reference/*.mp4
+# Downloaded or generated video/data archives
+data/*.zip
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
 
-# OS/editor files
+# Logs and local caches
+*.log
+.cache/
+cache/
+tmp/
+temp/
+
+# IDE and OS files
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
+desktop.ini
