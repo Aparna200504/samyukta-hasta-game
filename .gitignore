@@ -39,7 +39,9 @@ students/
 *.onnx
 
 # Downloaded or generated video/data archives
+data
 data.zip
+outputs.zip
 data/*.zip
 *.mp4
 *.avi
@@ -60,3 +62,7 @@ temp/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Track outputs folder
+!outputs/
+!outputs/**
